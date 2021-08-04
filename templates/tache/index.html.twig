@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %} 
+
+{% block title %} Liste des taches {% endblock %}
+
+{% block body %}
+    <h2> Liste des taches </h2>
+    {% for tache in liste_des_taches %}
+        <li>{{ tache.titre }} - {{ tache.description }} </li>
+    {% endfor %}
+
+{% endblock %}

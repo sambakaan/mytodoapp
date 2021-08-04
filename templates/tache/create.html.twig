@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Ajouter une nouvelle tache 
+{% endblock %}
+{% block body %}
+    <h2>Ajout une tache</h2>
+
+    {{ form_start(formulaire) }}
+            {{ form_widget(formulaire) }}
+            <button type="submit"> Enregistrer </button>
+    {{ form_end(formulaire) }}
+{% endblock %}
